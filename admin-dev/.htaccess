@@ -79,3 +79,8 @@ DirectoryIndex index.php
     # the required version of TLS is used for API calls.
     SSLOptions +StdEnvVars
 </IfModule>
+
+<IfModule mod_headers.c>
+        Header always set Referrer-Policy: origin
+</IfModule>
+
